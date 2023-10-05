@@ -1,0 +1,58 @@
+#1 Release Component Manager (Shared_ptr)
+ - Scene의 ComponentManager의 ComponentArray(Shared_ptr) reset() 멤버함수 호출
+[BEFORE]
+32,137.56KB
+
+[AFTER]
+32,127.24KB
+
+[Difference]
+↑ : 0
+↓ : 10KB
+-----------------------------------------------------
+#2 Release std (map, vector . . . )
+ - ~~~.clear(); ~~~.reset(); ~~~.release();
+
+[BEFORE]
+32,127.24KB
+
+[AFTER]
+31,624.34KB
+
+[Difference]
+↑ : 0
+↓ : 502.29KB
+-----------------------------------------------------
+#3 Reconstruct System Release
+[BEFORE]
+31,624.34KB
+
+[AFTER]
+13,483.47KB
+
+[Difference]
+↑ : 0
+↓ : 18,140.87KB
+-----------------------------------------------------
+#4 Fix SoundDevice Release
+[BEFORE]
+13,483.47KB
+
+[AFTER]
+12,948.73KB
+
+[Difference]
+↑ : 0
+↓ : 534.74KB
+-----------------------------------------------------
+#5 Fix Font Release
+[BEFORE]
+12,948.73KB
+
+[AFTER]
+12,934.41KB
+
+[Difference]
+↑ : 0
+↓ : 14.32
+-----------------------------------------------------
